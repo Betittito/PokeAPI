@@ -60,6 +60,8 @@ class webServices: UIViewController{
                     let respGameIndices = responseJSON!["game_indices"] as! [[String:Any]]
                     let respSprites = responseJSON!["sprites"] as! [String:Any]
                     let respSpecies = responseJSON!["species"] as! [String:Any]
+                    let respMoves = responseJSON!["moves"] as! [[String:Any]]
+                    let respType = responseJSON!["types"] as! [[String:Any]]
                     let id = responseJSON!["id"] as! Int
                     let idString = String(id)
                     let exp = responseJSON!["base_experience"] as! Int
@@ -126,13 +128,30 @@ class webServices: UIViewController{
                         let name = versions["name"] as! String
                         let url = versions["url"] as! String
                         dictionaries.dictoIndx.append(["game_index":"\(game_indexString)", "name":"\(name)", "url":"\(url)"])
-                        
                     }
+                    
+                    for jsonP in respMoves{
+                        let movements = jsonP["move"] as! [String: Any]
+                        let move = movements["name"] as! String
+                        let url = movements["url"] as! String
+                        dictionaries.dictoMoves.append(["move":"\(move)","url":"\(url)"])
+                    }
+                    
+                    for jsonP in respType{
+                        let types = jsonP["type"] as! [String: Any]
+                        let type = types["name"] as! String
+                        let url = types["url"] as! String
+                        dictionaries.dictoType.append(["name":"\(type)", "url":"\(url)"])
+                    }
+                    
                     for (key, value) in respSprites{
                         dictionaries.dictoImages.append(["\(key)":"\(value)"])
                     }
                     for (key, value) in respSpecies{
                         dictionaries.dictoSpecies.append(["\(key)":"\(value)"])
+                    }
+                    DispatchQueue.main.async {
+                        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "openPopUp"), object: nil)
                     }
                 //MARK: - pokemon/
                 case "pokemon/":

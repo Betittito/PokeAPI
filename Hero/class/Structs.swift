@@ -15,6 +15,8 @@ struct dictionaries {
     static var dictoImages = [Dictionary<String, String>]()
     static var dictoSpecies = [Dictionary<String, String>]()
     static var dictoGenerals = [Dictionary<String, String>]()
+    static var dictoType = [Dictionary<String, String>]()
+    static var dictoMoves = [Dictionary<String, String>]()
     static var dictoVersions = [Dictionary<String, String>]()
     static var dictoVersionsTitle = [Dictionary<String, String>]()
     static var dictoWtDictoVersions = [Dictionary<String, Any>]()
