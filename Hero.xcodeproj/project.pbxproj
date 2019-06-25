@@ -16,6 +16,10 @@
 		0D42DA9222C13C55001D54A8 /* HeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DA9122C13C55001D54A8 /* HeroUITests.swift */; };
 		0D42DAA022C13F30001D54A8 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DA9F22C13F30001D54A8 /* WebServices.swift */; };
 		0D42DAA222C15ADC001D54A8 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DAA122C15ADC001D54A8 /* Structs.swift */; };
+		0D42DAA422C2577B001D54A8 /* collectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DAA322C2577B001D54A8 /* collectionViewCell.swift */; };
+		0D42DAA722C25CC4001D54A8 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DAA622C25CC4001D54A8 /* UIImageView.swift */; };
+		0D42DAA922C25E93001D54A8 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DAA822C25E93001D54A8 /* UIImage.swift */; };
+		0D42DAAB22C279CA001D54A8 /* generalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42DAAA22C279CA001D54A8 /* generalClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		0D42DA9322C13C55001D54A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D42DA9F22C13F30001D54A8 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		0D42DAA122C15ADC001D54A8 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		0D42DAA322C2577B001D54A8 /* collectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionViewCell.swift; sourceTree = "<group>"; };
+		0D42DAA622C25CC4001D54A8 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		0D42DAA822C25E93001D54A8 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		0D42DAAA22C279CA001D54A8 /* generalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				0D42DA7122C13C52001D54A8 /* AppDelegate.swift */,
-				0D42DA7322C13C52001D54A8 /* ViewController.swift */,
-				0D42DA7522C13C52001D54A8 /* Main.storyboard */,
 				0D42DA7822C13C55001D54A8 /* Assets.xcassets */,
-				0D42DA7A22C13C55001D54A8 /* LaunchScreen.storyboard */,
+				0D42DAA522C25C95001D54A8 /* class */,
+				0D42DAA322C2577B001D54A8 /* collectionViewCell.swift */,
 				0D42DA7D22C13C55001D54A8 /* Info.plist */,
-				0D42DA9F22C13F30001D54A8 /* WebServices.swift */,
-				0D42DAA122C15ADC001D54A8 /* Structs.swift */,
+				0D42DA7A22C13C55001D54A8 /* LaunchScreen.storyboard */,
+				0D42DA7522C13C52001D54A8 /* Main.storyboard */,
+				0D42DA7322C13C52001D54A8 /* ViewController.swift */,
 			);
 			path = Hero;
 			sourceTree = "<group>";
@@ -129,6 +137,18 @@
 				0D42DA9322C13C55001D54A8 /* Info.plist */,
 			);
 			path = HeroUITests;
+			sourceTree = "<group>";
+		};
+		0D42DAA522C25C95001D54A8 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				0D42DAA122C15ADC001D54A8 /* Structs.swift */,
+				0D42DAA822C25E93001D54A8 /* UIImage.swift */,
+				0D42DAA622C25CC4001D54A8 /* UIImageView.swift */,
+				0D42DA9F22C13F30001D54A8 /* WebServices.swift */,
+				0D42DAAA22C279CA001D54A8 /* generalClass.swift */,
+			);
+			path = class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D42DAA222C15ADC001D54A8 /* Structs.swift in Sources */,
+				0D42DAAB22C279CA001D54A8 /* generalClass.swift in Sources */,
 				0D42DA7422C13C52001D54A8 /* ViewController.swift in Sources */,
 				0D42DA7222C13C52001D54A8 /* AppDelegate.swift in Sources */,
+				0D42DAA422C2577B001D54A8 /* collectionViewCell.swift in Sources */,
+				0D42DAA722C25CC4001D54A8 /* UIImageView.swift in Sources */,
 				0D42DAA022C13F30001D54A8 /* WebServices.swift in Sources */,
+				0D42DAA922C25E93001D54A8 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

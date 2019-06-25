@@ -5,8 +5,8 @@
 //  Created by Jesus Alberto Berlanga Reyes on 6/24/19.
 //  Copyright © 2019 Jesus Alberto Berlanga Reyes. All rights reserved.
 //
+import UIKit
 
-import Foundation
 
 struct dictionaries {
     static var dictoAbilities = [Dictionary<String, String>]()
@@ -19,4 +19,14 @@ struct dictionaries {
     static var dictoVersionsTitle = [Dictionary<String, String>]()
     static var dictoWtDictoVersions = [Dictionary<String, Any>]()
     static var dictoIndx = [Dictionary<String, String>]()
+    static var dictoPokemon = [Dictionary<String, String>]()
+    static var dictoPokemonPage = [Dictionary<String, String>]()
+}
+struct links {
+    static var link = String()
+}
+struct images {
+    static var countImages : Int = 0
+    static var image : UIImageView = UIImageView()
+    static var dictionary = [Dictionary<String, UIImageView>]()
 }
