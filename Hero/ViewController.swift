@@ -113,7 +113,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     //MARK: - Functions
     @objc func loadCollectionView(){
         count = dictionaries.dictoPokemonPage[0]["count"] as! String
-        lblTotPok.text = "Toal de pokemon \(count)"
+        lblTotPok.text = "Total de pokemon \(count)"
         let prev = dictionaries.dictoPokemonPage[0]["previous"]
         let next = dictionaries.dictoPokemonPage[0]["next"]
         MyCollectionView.reloadData()
@@ -211,6 +211,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func closePopUp(_ sender: UIButton) {
         dictionaries.dictoGenerals.removeAll()
         dictionaries.dictoImages.removeAll()
+        dictionaries.dictoMoves.removeAll()
+        dictionaries.dictoType.removeAll()
         imgPokemon.image = nil
         constraintTopView.constant = -100
         constraintBottomView.constant = 900

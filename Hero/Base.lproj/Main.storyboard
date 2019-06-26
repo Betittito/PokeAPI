@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5GC-zt-DDb">
-                                <rect key="frame" x="0.0" y="94" width="414" height="698"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="683"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="1" id="2pP-HS-zb5">
                                     <size key="itemSize" width="83" height="56"/>
@@ -222,7 +222,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7UT-fp-Aml" secondAttribute="bottom" constant="900" id="Bxs-4b-dgD"/>
                             <constraint firstItem="MHB-Dr-v1F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="CQ6-C6-sxV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Si-ze-ipo" secondAttribute="trailing" constant="32" id="GdD-LB-wqI"/>
-                            <constraint firstItem="2Si-ze-ipo" firstAttribute="top" secondItem="5GC-zt-DDb" secondAttribute="bottom" constant="20" id="JqX-LC-OFK"/>
+                            <constraint firstItem="2Si-ze-ipo" firstAttribute="top" secondItem="5GC-zt-DDb" secondAttribute="bottom" constant="35" id="JqX-LC-OFK"/>
                             <constraint firstItem="F6i-1v-PxB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P1e-eQ-B4I"/>
                             <constraint firstItem="7UT-fp-Aml" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VSg-QK-oDh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5GC-zt-DDb" secondAttribute="trailing" id="W7W-2j-6u1"/>
